@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>
+List      </ion-title>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+    <table class="table">
+        <div>
+      <thead class="thead-dark">
+            <th *ngFor="let one of userHeads">{{one}}</th>
+          
+        </thead>
+        <tbody>
+          <tr *ngFor="let one of userData" >
+            <td>{{one.classId}}</td>
+            <td>{{one.className}}</td>
+    
+          </tr>
+        
+        </tbody>
+        </div>
+      
+      </table>
+</ion-content>
